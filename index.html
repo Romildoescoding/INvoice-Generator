@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Invoice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="App">
+        <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
+
+
+        </div>
+        <form action="/" id="invoice-form" class="flex">
+            <label for="name">NAME: </label>
+            <input id="name" placeholder="Enter name" />
+            <label for="address">ADDRESS: </label>
+            <input id="address" placeholder="Enter address" />
+            <label for="product">PRODUCT: </label>
+            <input id="product" placeholder="Enter product" />
+            <label for="hsn">HSN: </label>
+            <input id="hsn" placeholder="Enter HSN" />
+            <label for="quantity">QUANTITY: </label>
+            <input id="quantity" placeholder="Enter quantity" type="number"/>
+            <label for="rate">RATE: </label>
+            <input id="rate" placeholder="Enter rate" type="number"/>
+            <label for="gst">GST: </label>
+            <input id="gst" placeholder="Enter GST" type="number" />
+            <label for="delivery">MODE OF DELIVERY: </label>
+            <input id="delivery" placeholder="(MANUAL / ONLINE)" />
+            <input type="submit" value="Submit" id="submit-button">
+        </form>
+
+        <div class="invoice-div hidden" style="display:none;">
+            <h4 class="center-heading">Tax Invoice</h4>
+            <table class="first-table">
+              <tr>
+                <td>
+                  <p>
+                  <h2 class="head-1">INvoice INC.</h2>
+                  Near Upes, Bidholi, UK - 248007<br>
+                  <b>GST-IN: 01BFFEFEFWWXRB</b><br>
+                  Phone: +916666066660 e-Mail: Invoice.inc@yahoo.com
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <br>
+            <table class="in-table">
+              <tr>
+                <th>Invoice Id</th>
+                <th>Invoice Dated</th>
+                <th>Reference Id <small>[if any]</small></th>
+              </tr>
+              <tr>
+                <td>2023/SB/01</td>
+                <td>1/11/2023</td>
+                <td>N/A</td>
+              </tr>
+            </table>
+            <br>
+            <table class="ref-table">
+              <tr>
+                <th>Buyer <small>(bill to)</small></th>
+                <th>Consignee <small>(ship to)</small></th>
+              </tr>
+              <tr>
+                <td class="name">ROMIL</td>
+                <td>ROMIL</td>
+              </tr>
+              <tr>
+                <td class="address">Bidholi</td>
+                <td>Bidholi, Dehradun</td>
+              </tr>
+              <tr>
+                <td>GST-IN: 01BWHWHJWJ</td>
+                <td>GST-IN: 01BWHWHJWJ</td>
+              </tr>
+            </table>
+            <br>
+            <table>
+              <tr>
+                <th>Product</th>
+                <th>HSN</th>
+                <th>Qty</th>
+                <th>Rate</th>
+                <th>GST</th>
+                <th>Taxable Amount</th>
+                <th>GST Amount</th>
+                <th>SubTotal</th>
+              </tr>
+        
+              <tr>
+                <td class="product">a4 paper</td>
+                <td class="hsn">4285</td>
+                <td class="quantity">22</td>
+                <td class="rate">250</td>
+                <td class="gst">12%</td>
+                <td class="taxable-amount">4910.71</td>
+                <td class="gst-amount">589.29</td>
+                <td class="sub-total">5500</td>
+              </tr>
+            
+            </table>
+            <br>
+            <table>
+              <tr>
+                <th>Total Taxable Amount</th>
+                <th>Total GST Amount</th>
+                <th>Rounded Off</th>
+                <th>Grand Total</th>
+              </tr>
+              <tr class="total-row">
+                <td class="total-taxable-amount">8258.92</td>
+                <td class="total-gst-amount">991.08</td>
+                <td class="rounded-off">0.0</td>
+                <td class="grand-total">INR 9250.0</td>
+              </tr>
+            </table>
+            <br>
+            <table>
+              <tr>
+                <th>Mode of Delivery</th>
+                <td class="delivery">MANUAL DELIVERY</td>
+              </tr>
+            </table>
+            <div class="terms-block">
+              <p class="terms-description">
+                Note:<br>
+                - Points are rounded off.<br>
+                - Subject to "UK" jurisdiction only.<br>
+                - Terms and Conditions Apply.
+              </p>
+            </div>
+            <div class="signature-block">
+              <p class="signature-title">For INvoice INC.</p>
+              <p class="signature-name"><small>Authorised Signatory</small></p>
+            </div>
+          </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

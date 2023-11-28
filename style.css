@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width:100%;
+}
+
+/*NAVBAR*/
+.navbar{
+    width:100%;
+    height:40px;
+}
+
+nav{
+    position:fixed;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.146);
+    width:100%;
+    background-color:rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    z-index:3;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    font-size:20px;
+    font-weight: 700;
+    padding-left:40px;
+    list-style: none;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+nav ul li:hover{
+    transform: translateY(-2px);
+}
+
+/* Custom styles for the form */
+#invoice-form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.visible{
+    opacity:100;
+    transition: opacity 1s;
+}
+
+#invoice-form label {
+    display: inline-block;
+    font-weight: 700;
+    width: 45%;
+    text-align: right;
+}
+
+#invoice-form input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#invoice-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Add this line to make the button a block-level element */
+}
+
+#invoice-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#submit-button {
+    margin-left: 45%;
+}
+/* ------------------------------------------------*/
+
+.invoice-div{
+  
+  margin-top: 10px;
+  /* opacity:0; */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.total-row {
+  font-weight: bold;
+}
+
+.signature-block {
+  float: right;
+  margin-top: 40px;
+}
+
+.terms-block {
+  float: left;
+  margin-top: 40px;
+  width: 40%;
+}
+
+.terms-description {
+  margin-top: 10px;
+}
+
+.center-heading {
+  text-align: center;
+}
+
+.first-table td {
+  width: 25%;
+}
+
+.ref-table td {
+  width: 25%;
+}
+
+.head-1 {
+  margin-bottom: 0cm;
+}
+
+.in-table td {
+  width: 25%;
+}
+
+.signature-name {
+  text-align: center;
+}
+
+.hidden{
+    opacity: 0;
+    transition: opacity 1s;
+}
